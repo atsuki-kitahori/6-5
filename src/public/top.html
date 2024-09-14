@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>アンケートフォーム</title>
+  </head>
+  <body>
+    <h1>アンケートフォーム</h1>
+    <form action="complete.php" method="post">
+      <div>
+        <label for="name">回答者名：</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="food_awnser">好きな食べ物をご記入ください：</label>
+        <input type="text" id="food_awnser" name="food_awnser" />
+      </div>
+      <div>
+        <label for="hobby_awnser">趣味をご記入ください：</label>
+        <input type="text" id="hobby_awnser" name="hobby_awnser" />
+      </div>
+      <div>
+        <button type="submit">送信</button>
+      </div>
+    </form>
+  </body>
+</html>
