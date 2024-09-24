@@ -3,36 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>アンケートフォーム</title>
+    <title>お問い合わせ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>アンケートフォーム</h1>
-    <form action="complete.php" method="post">
-      <div>
-        <label for="name">回答者名：</label>
-        <input type="text" id="name" name="name" placeholder="回答者名" />
-      </div>
-      <div>
-        <label for="food_awnser">好きな食べ物をご記入ください：</label>
-        <input
-          type="text"
-          id="food_awnser"
-          name="food_awnser"
-          placeholder="好きな食べ物"
-        />
-      </div>
-      <div>
-        <label for="hobby_awnser">趣味をご記入ください：</label>
-        <input
-          type="text"
-          id="hobby_awnser"
-          name="hobby_awnser"
-          placeholder="趣味"
-        />
-      </div>
-      <div>
-        <button type="submit">送信</button>
-      </div>
-    </form>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold mb-8 text-center">お問い合わせ</h1>
+      <form action="complete.php" method="post" class="space-y-6">
+        <div>
+          <label for="name" class="block text-gray-700 text-lg mb-2"
+            >回答者名</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="回答者名"
+            class="w-full px-4 py-3 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div class="flex space-x-6">
+          <div class="w-1/2">
+            <label for="food_awnser" class="block text-gray-700 text-lg mb-2"
+              >好きな食べ物</label
+            >
+            <input
+              type="text"
+              id="food_awnser"
+              name="food_awnser"
+              placeholder="好きな食べ物"
+              class="w-full px-4 py-3 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div class="w-1/2">
+            <label for="hobby_awnser" class="block text-gray-700 text-lg mb-2"
+              >趣味</label
+            >
+            <input
+              type="text"
+              id="hobby_awnser"
+              name="hobby_awnser"
+              placeholder="趣味"
+              class="w-full px-4 py-3 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-3 px-6 text-xl rounded-md hover:bg-blue-600 transition duration-300"
+          >
+            送信
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
